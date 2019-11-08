@@ -1,0 +1,27 @@
+# Train configuration
+train.batch_size=4
+
+# Training loop
+training_loop.n_epochs=5000
+training_loop.device_numbers=[0]
+training_loop.validation_per_epoch=200
+
+# Datase
+train.data_class='data_with_segmentations_gin'
+data_with_segmentations_gin.train_sampling_mode='fixed_json'
+data_with_segmentations_gin.train_sampling_mode_config='{"0000": 4844}'
+data_with_segmentations_gin.verbose_printing=False
+data_with_segmentations_gin.verbose=False
+data_with_segmentations_gin.number_of_loaders=20
+data_with_segmentations_gin.data_buffer_size=200
+data_with_segmentations_gin.metadata_buffer_size=500
+data_with_segmentations_gin.training_fraction=1
+data_with_segmentations_gin.validation_fraction=1
+data_with_segmentations_gin.input_channels=3
+data_with_segmentations_gin.stochasticity={'training':True, 'validation':False, 'test': True}
+data_with_segmentations_gin.training_epochs_per_validation_epoch=1
+data_with_segmentations_gin.random_seed=7
+data_with_segmentations_gin.data_prefix='/gpfs/data/geraslab/jp4989/data/2010_2017_cropped_images_hdf5/'
+data_with_segmentations_gin.file_data_list='/gpfs/data/geraslab/Nan/data/cancer_data_list_1204/data_0709_1453_120days_with_cancer_with_unknowns_with_annotation.pkl'
+data_with_segmentations_gin.cancer_heatmap_prefix=['/gpfs/data/geraslab/Nan/images/heatmaps_0211_saving_per_200_val_only/epoch_1000/heatmap_malignant/', '/gpfs/data/geraslab/Nan/images/heatmaps_0211_saving_per_200_val_only/epoch_1000/heatmap_benign/']
+data_with_segmentations_gin.cancer_heatmap_channels=2
