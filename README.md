@@ -10,5 +10,5 @@ Example: ``python bin/train.py save_to_folder configs/breast.gin``.
 ## TODO:
 
 1. Clear: ~~Untested~~.
-2. Clear: ~~Still importing functions outside this repository. ~~
+2. Clear: ~~Still importing functions outside this repository~~.
 3. Timer does not work at all.  
