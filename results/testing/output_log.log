@@ -1,0 +1,17 @@
+Setting class [0000] from 181972 to 4844
+Leaving class [0001] as 267
+Leaving class [0010] as 294
+Leaving class [0011] as 11
+Leaving class [0100] as 1840
+Leaving class [0101] as 83
+Leaving class [0110] as 25
+Leaving class [0111] as 3
+Leaving class [1000] as 1888
+Leaving class [1001] as 40
+Leaving class [1010] as 74
+Leaving class [1011] as 1
+Leaving class [1100] as 275
+Leaving class [1101] as 25
+Leaving class [1110] as 17
+Leaving class [1111] as 1
+[{'n': 4844, 'replace': False}, {'n': 267, 'replace': False}, {'n': 294, 'replace': False}, {'n': 11, 'replace': False}, {'n': 1840, 'replace': False}, {'n': 83, 'replace': False}, {'n': 25, 'replace': False}, {'n': 3, 'replace': False}, {'n': 1888, 'replace': False}, {'n': 40, 'replace': False}, {'n': 74, 'replace': False}, {'n': 1, 'replace': False}, {'n': 275, 'replace': False}, {'n': 25, 'replace': False}, {'n': 17, 'replace': False}, {'n': 1, 'replace': False}]

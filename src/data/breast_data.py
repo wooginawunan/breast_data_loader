@@ -608,7 +608,7 @@ class data:
         minibatch = []
         indices = []
         read_counter = 0
-
+        print(read_counter, size_of_the_minibatch, current_index , data_length)
         while (read_counter < size_of_the_minibatch) and (current_index < data_length):
             data_index, shared_array_index, datum_minus_images = self.q_data_loaded.get()
 
@@ -1014,6 +1014,7 @@ class data_with_segmentations(data):
         read_counter = 0
             
         if not multiple:
+            print(read_counter, size_of_the_minibatch, current_index , data_length)
             while (read_counter < size_of_the_minibatch) and (current_index < data_length):
                 start = dt.datetime.now()
 
@@ -1398,7 +1399,7 @@ class data_gin(data):
 
 
 @gin.configurable
-class data_with_segmentation_gin(data_with_segmentations):
+class data_with_segmentations_gin(data_with_segmentations):
     def __init__(self, logger, 
                        stochasticity,
                        minibatch_size,

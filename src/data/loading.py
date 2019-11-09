@@ -3,13 +3,9 @@ import numpy as np
 import multiprocessing as mp
 import datetime as dt
 
-#from . import augmentations
-sys.path.append('/gpfs/data/geraslab/Nan/BreastScreening/code/')
-import utilities.reading_images as reading_images
-import utilities.augmentations as augmentations
-import utilities.image_normalization as image_normalization
-#from utilities.decorators import deprecated
-
+from . import reading_images
+from . import image_normalization
+from . import augmentations
 
 def loader_feeder(data_list, q_data_to_load, number_of_loaders, parameters, random_seed, permute=True):
 

@@ -1,4 +1,3 @@
-
 class SeedShifter:
     def __init__(self, random_seed, number_of_loaders):
         self.random_seed = random_seed

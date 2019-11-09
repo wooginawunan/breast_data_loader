@@ -5,10 +5,8 @@ import multiprocessing as mp
 import imageio
 import os
 from . import loading
-
-sys.path.append('/gpfs/data/geraslab/Nan/BreastScreening/code/')
-import utilities.reading_images as reading_images
-import utilities.image_normalization as image_normalization
+from . import reading_images
+from . import image_normalization
 
 # TODO: [zp489] Integrate into regular loading code
 

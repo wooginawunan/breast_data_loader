@@ -31,8 +31,8 @@ def _construct_default_callbacks(H, H_batch, save_path, save_freq, custom_callba
                                )
     )
 
-    callbacks.append(LambdaCallback(on_epoch_end=partial(_save_history_csv, save_path=save_path, H=H, save_with_structure=save_with_structure)))
-    callbacks.append(LambdaCallback(on_epoch_end=partial(_save_history_csv_batch, save_path=history_batch, H=H_batch, save_with_structure=save_with_structure)))
+    callbacks.append(LambdaCallback(on_epoch_end=partial(_save_history_csv, save_path=save_path, H=H)))
+    callbacks.append(LambdaCallback(on_epoch_end=partial(_save_history_csv_batch, save_path=history_batch, H=H_batch)))
     callbacks.append(History())
 
     return callbacks
@@ -98,7 +98,7 @@ def _append_to_history_csv(epoch, logs, H):
             pass
 
 @gin.configurable
-def training_loop(meta_data, config, 
+def training_loop(meta_data, config, label_mode,
                   save_path,  steps_per_epoch, 
                   train=None, valid=None, validation_per_epoch=1,
                   data_loader=None, validation_steps=None,
@@ -125,10 +125,10 @@ def training_loop(meta_data, config,
         clbk.set_meta_data(meta_data)
         clbk.set_config(config)
         clbk.set_dataloader(data_loader)
+        clbk.mode = label_mode
     
-    model = Model_Breast()
+    model = Model_Breast(label_mode)
     
-    model.get_x_to_tensor_func(is_multi_gpu)
     _ = model.fit_generator(data_loader,
                         steps_per_epoch=steps_per_epoch,
                         validation_steps=validation_steps,

@@ -1,33 +1,14 @@
 """
 Minor utilities
 """
-
-import sys
-from functools import reduce, partial
-
 import pickle
 import pandas as pd
 import numpy as np
-import torch.nn as nn
-from sklearn.metrics import roc_auc_score
-import traceback
 import logging
-import argparse
-import optparse
-import datetime
-import sys
-import pprint
-import types
-import time
-import copy
-import subprocess
-import glob
-from collections import OrderedDict
-import os
-import signal
-import atexit
-import json
-import inspect
+import sys, os
+from contextlib import contextmanager
+import warnings
+import functools
 
 from logging import handlers
 
@@ -36,7 +17,6 @@ import gin
 from gin.config import _OPERATIVE_CONFIG
 
 import torch
-from torch.nn.modules.module import _addindent
 
 logger = logging.getLogger(__name__)
 
@@ -75,7 +55,8 @@ class logger_breast_ori:
                 self.text_to_log = ''
 
         if print_log:
-            print(string_to_log, end=end_of_line)
+            pass
+            #print(string_to_log, end=end_of_line)
 
     def flush(self):
         self.log_file.write(self.text_to_log)
@@ -87,6 +68,26 @@ class logger_breast_ori:
 
         self.log_file.write(self.text_to_log)
         self.log_file.close()
+
+def get_random_seed(random_seed):
+    if random_seed == -1:
+        return int(time.time() * 1000000) % (2 ** 30)
+    else:
+        return random_seed
+
+def deprecated(func):
+    """This is a decorator which can be used to mark functions
+    as deprecated. It will result in a warning being emitted
+    when the function is used."""
+    @functools.wraps(func)
+    def new_func(*args, **kwargs):
+        warnings.simplefilter('always', DeprecationWarning)  # turn off filter
+        warnings.warn("Call to deprecated function {}.".format(func.__name__),
+                      category=DeprecationWarning,
+                      stacklevel=2)
+        warnings.simplefilter('default', DeprecationWarning)  # reset filter
+        return func(*args, **kwargs)
+    return new_func
 
 def x_to_tensor(data_batch_x):
     tensor_list = [torch.Tensor(convert_img(data_batch_x[i])) for i in range(4)]
@@ -133,9 +134,6 @@ def class_count_breast(y_true, key):
     else:
         return sum(y_true[:, index_table[key]]), y_true.shape[0]
 
-from contextlib import contextmanager
-
-
 class Fork(object):
     def __init__(self, file1, file2):
         self.file1 = file1
@@ -148,7 +146,6 @@ class Fork(object):
     def flush(self):
         self.file1.flush()
         self.file2.flush()
-
 
 @contextmanager
 def replace_logging_stream(file_):
@@ -202,3 +199,48 @@ def run_with_redirection(stdout_path, stderr_path, func):
                             func(*args, **kwargs)
 
     return func_wrapper
+
+def configure_logger(name='',
+        console_logging_level=logging.INFO,
+        file_logging_level=None,
+        log_file=None):
+    """
+    Configures logger
+    :param name: logger name (default=module name, __name__)
+    :param console_logging_level: level of logging to console (stdout), None = no logging
+    :param file_logging_level: level of logging to log file, None = no logging
+    :param log_file: path to log file (required if file_logging_level not None)
+    :return instance of Logger class
+    """
+
+    if file_logging_level is None and log_file is not None:
+        print("Didnt you want to pass file_logging_level?")
+
+    if len(logging.getLogger(name).handlers) != 0:
+        print("Already configured logger '{}'".format(name))
+        return
+
+    if console_logging_level is None and file_logging_level is None:
+        return  # no logging
+
+    logger = logging.getLogger(name)
+    logger.handlers = []
+    logger.setLevel(logging.DEBUG)
+    format = logging.Formatter("%(asctime)s - %(name)s - %(levelname)s - %(message)s")
+
+    if console_logging_level is not None:
+        ch = logging.StreamHandler(sys.stdout)
+        ch.setFormatter(format)
+        ch.setLevel(console_logging_level)
+        logger.addHandler(ch)
+
+    if file_logging_level is not None:
+        if log_file is None:
+            raise ValueError("If file logging enabled, log_file path is required")
+        fh = handlers.RotatingFileHandler(log_file, maxBytes=(1048576 * 5), backupCount=7)
+        fh.setFormatter(format)
+        logger.addHandler(fh)
+
+    logger.info("Logging configured!")
+
+    return logger

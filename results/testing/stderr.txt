@@ -1,0 +1,324 @@
+2019-11-08 19:13:03,245 - __main__ - INFO - samples_per_training_epoch=9688; steps_per_epoch=2422
+2019-11-08 19:13:03,246 - __main__ - INFO - samples_per_evaluation_epoch=28462; validation_steps=7116
+2019-11-08 19:17:05,627 - __main__ - INFO - samples_per_training_epoch=9688; steps_per_epoch=2422
+2019-11-08 19:17:05,627 - __main__ - INFO - samples_per_evaluation_epoch=28462; validation_steps=7116
+2019-11-08 19:17:05,627 - src.training_loop - INFO - Removing /gpfs/data/geraslab/Nan/public_repo/breast_data_loader/results/testing/history.csv
+2019-11-08 19:19:16,577 - __main__ - INFO - samples_per_training_epoch=9688; steps_per_epoch=2422
+2019-11-08 19:19:16,578 - __main__ - INFO - samples_per_evaluation_epoch=28462; validation_steps=7116
+2019-11-08 19:19:16,578 - src.training_loop - INFO - Removing /gpfs/data/geraslab/Nan/public_repo/breast_data_loader/results/testing/history.csv
+2019-11-08 19:21:15,563 - __main__ - INFO - samples_per_training_epoch=9688; steps_per_epoch=2422
+2019-11-08 19:21:15,583 - __main__ - INFO - samples_per_evaluation_epoch=28462; validation_steps=7116
+2019-11-08 19:21:15,583 - src.training_loop - INFO - Removing /gpfs/data/geraslab/Nan/public_repo/breast_data_loader/results/testing/history.csv
+2019-11-08 19:23:30,696 - __main__ - INFO - samples_per_training_epoch=9688; steps_per_epoch=2422
+2019-11-08 19:23:30,697 - __main__ - INFO - samples_per_evaluation_epoch=28462; validation_steps=7116
+2019-11-08 19:23:30,697 - src.training_loop - INFO - Removing /gpfs/data/geraslab/Nan/public_repo/breast_data_loader/results/testing/history.csv
+2019-11-08 19:31:21,436 - __main__ - INFO - samples_per_training_epoch=9688; steps_per_epoch=2422
+2019-11-08 19:31:21,437 - __main__ - INFO - samples_per_evaluation_epoch=28462; validation_steps=7116
+2019-11-08 19:31:21,437 - src.training_loop - INFO - Removing /gpfs/data/geraslab/Nan/public_repo/breast_data_loader/results/testing/history.csv
+2019-11-08 19:36:08,440 - __main__ - INFO - samples_per_training_epoch=9688; steps_per_epoch=2422
+2019-11-08 19:36:08,441 - __main__ - INFO - samples_per_evaluation_epoch=28462; validation_steps=7116
+2019-11-08 19:36:08,441 - src.training_loop - INFO - Removing /gpfs/data/geraslab/Nan/public_repo/breast_data_loader/results/testing/history.csv
+2019-11-08 19:41:47,288 - __main__ - INFO - samples_per_training_epoch=9688; steps_per_epoch=2422
+2019-11-08 19:41:47,288 - __main__ - INFO - samples_per_evaluation_epoch=28462; validation_steps=7116
+2019-11-08 19:41:47,289 - src.training_loop - INFO - Removing /gpfs/data/geraslab/Nan/public_repo/breast_data_loader/results/testing/history.csv
+Process Process-2:
+Process Process-7:
+Process Process-9:
+Process Process-12:
+Process Process-19:
+Process Process-11:
+Process Process-13:
+Process Process-6:
+Process Process-15:
+Process Process-20:
+Process Process-16:
+Process Process-8:
+Process Process-3:
+Process Process-21:
+Process Process-4:
+Process Process-14:
+Process Process-18:
+Process Process-17:
+Process Process-5:
+Process Process-10:
+Traceback (most recent call last):
+Traceback (most recent call last):
+Traceback (most recent call last):
+Traceback (most recent call last):
+Traceback (most recent call last):
+  File "/usr/lib/python3.5/multiprocessing/process.py", line 249, in _bootstrap
+    self.run()
+  File "/usr/lib/python3.5/multiprocessing/process.py", line 249, in _bootstrap
+    self.run()
+Traceback (most recent call last):
+Traceback (most recent call last):
+Traceback (most recent call last):
+  File "/usr/lib/python3.5/multiprocessing/process.py", line 249, in _bootstrap
+    self.run()
+  File "/usr/lib/python3.5/multiprocessing/process.py", line 93, in run
+    self._target(*self._args, **self._kwargs)
+  File "/usr/lib/python3.5/multiprocessing/process.py", line 93, in run
+    self._target(*self._args, **self._kwargs)
+Traceback (most recent call last):
+  File "/usr/lib/python3.5/multiprocessing/process.py", line 249, in _bootstrap
+    self.run()
+Traceback (most recent call last):
+Traceback (most recent call last):
+  File "/usr/lib/python3.5/multiprocessing/process.py", line 93, in run
+    self._target(*self._args, **self._kwargs)
+Traceback (most recent call last):
+  File "/gpfs/data/geraslab/Nan/public_repo/breast_data_loader/src/data/loading_cancer_heatmap.py", line 410, in loader_multiple_input_size
+    shared_array_index = q_empty_indices.get()
+  File "/gpfs/data/geraslab/Nan/public_repo/breast_data_loader/src/data/loading_cancer_heatmap.py", line 410, in loader_multiple_input_size
+    shared_array_index = q_empty_indices.get()
+  File "/usr/lib/python3.5/multiprocessing/process.py", line 249, in _bootstrap
+    self.run()
+  File "/usr/lib/python3.5/multiprocessing/process.py", line 93, in run
+    self._target(*self._args, **self._kwargs)
+  File "/usr/lib/python3.5/multiprocessing/process.py", line 249, in _bootstrap
+    self.run()
+  File "/usr/lib/python3.5/multiprocessing/process.py", line 249, in _bootstrap
+    self.run()
+  File "/gpfs/data/geraslab/Nan/public_repo/breast_data_loader/src/data/loading_cancer_heatmap.py", line 410, in loader_multiple_input_size
+    shared_array_index = q_empty_indices.get()
+  File "/usr/lib/python3.5/multiprocessing/queues.py", line 93, in get
+    with self._rlock:
+Traceback (most recent call last):
+  File "/usr/lib/python3.5/multiprocessing/process.py", line 249, in _bootstrap
+    self.run()
+  File "/usr/lib/python3.5/multiprocessing/process.py", line 249, in _bootstrap
+    self.run()
+  File "/usr/lib/python3.5/multiprocessing/queues.py", line 93, in get
+    with self._rlock:
+  File "/usr/lib/python3.5/multiprocessing/process.py", line 93, in run
+    self._target(*self._args, **self._kwargs)
+  File "/gpfs/data/geraslab/Nan/public_repo/breast_data_loader/src/data/loading_cancer_heatmap.py", line 410, in loader_multiple_input_size
+    shared_array_index = q_empty_indices.get()
+  File "/usr/lib/python3.5/multiprocessing/process.py", line 93, in run
+    self._target(*self._args, **self._kwargs)
+  File "/usr/lib/python3.5/multiprocessing/process.py", line 93, in run
+    self._target(*self._args, **self._kwargs)
+  File "/usr/lib/python3.5/multiprocessing/queues.py", line 93, in get
+    with self._rlock:
+  File "/usr/lib/python3.5/multiprocessing/synchronize.py", line 96, in __enter__
+    return self._semlock.__enter__()
+  File "/usr/lib/python3.5/multiprocessing/process.py", line 249, in _bootstrap
+    self.run()
+  File "/usr/lib/python3.5/multiprocessing/process.py", line 249, in _bootstrap
+    self.run()
+Traceback (most recent call last):
+  File "/usr/lib/python3.5/multiprocessing/process.py", line 93, in run
+    self._target(*self._args, **self._kwargs)
+  File "/usr/lib/python3.5/multiprocessing/process.py", line 93, in run
+    self._target(*self._args, **self._kwargs)
+  File "/usr/lib/python3.5/multiprocessing/synchronize.py", line 96, in __enter__
+    return self._semlock.__enter__()
+  File "/gpfs/data/geraslab/Nan/public_repo/breast_data_loader/src/data/loading_cancer_heatmap.py", line 410, in loader_multiple_input_size
+    shared_array_index = q_empty_indices.get()
+  File "/usr/lib/python3.5/multiprocessing/process.py", line 249, in _bootstrap
+    self.run()
+  File "/usr/lib/python3.5/multiprocessing/queues.py", line 93, in get
+    with self._rlock:
+  File "/gpfs/data/geraslab/Nan/public_repo/breast_data_loader/src/data/loading_cancer_heatmap.py", line 410, in loader_multiple_input_size
+    shared_array_index = q_empty_indices.get()
+  File "/gpfs/data/geraslab/Nan/public_repo/breast_data_loader/src/data/loading_cancer_heatmap.py", line 410, in loader_multiple_input_size
+    shared_array_index = q_empty_indices.get()
+  File "/usr/lib/python3.5/multiprocessing/synchronize.py", line 96, in __enter__
+    return self._semlock.__enter__()
+  File "/usr/lib/python3.5/multiprocessing/process.py", line 93, in run
+    self._target(*self._args, **self._kwargs)
+  File "/usr/lib/python3.5/multiprocessing/process.py", line 93, in run
+    self._target(*self._args, **self._kwargs)
+  File "/gpfs/data/geraslab/Nan/public_repo/breast_data_loader/src/data/loading_cancer_heatmap.py", line 410, in loader_multiple_input_size
+    shared_array_index = q_empty_indices.get()
+  File "/gpfs/data/geraslab/Nan/public_repo/breast_data_loader/src/data/loading_cancer_heatmap.py", line 410, in loader_multiple_input_size
+    shared_array_index = q_empty_indices.get()
+  File "/usr/lib/python3.5/multiprocessing/process.py", line 93, in run
+    self._target(*self._args, **self._kwargs)
+  File "/usr/lib/python3.5/multiprocessing/queues.py", line 93, in get
+    with self._rlock:
+  File "/usr/lib/python3.5/multiprocessing/queues.py", line 93, in get
+    with self._rlock:
+  File "/usr/lib/python3.5/multiprocessing/process.py", line 249, in _bootstrap
+    self.run()
+  File "/usr/lib/python3.5/multiprocessing/synchronize.py", line 96, in __enter__
+    return self._semlock.__enter__()
+KeyboardInterrupt
+  File "/usr/lib/python3.5/multiprocessing/queues.py", line 93, in get
+    with self._rlock:
+  File "/usr/lib/python3.5/multiprocessing/queues.py", line 93, in get
+    with self._rlock:
+  File "/gpfs/data/geraslab/Nan/public_repo/breast_data_loader/src/data/loading_cancer_heatmap.py", line 410, in loader_multiple_input_size
+    shared_array_index = q_empty_indices.get()
+  File "/gpfs/data/geraslab/Nan/public_repo/breast_data_loader/src/data/loading_cancer_heatmap.py", line 410, in loader_multiple_input_size
+    shared_array_index = q_empty_indices.get()
+KeyboardInterrupt
+  File "/usr/lib/python3.5/multiprocessing/queues.py", line 93, in get
+    with self._rlock:
+  File "/gpfs/data/geraslab/Nan/public_repo/breast_data_loader/src/data/loading_cancer_heatmap.py", line 410, in loader_multiple_input_size
+    shared_array_index = q_empty_indices.get()
+  File "/usr/lib/python3.5/multiprocessing/synchronize.py", line 96, in __enter__
+    return self._semlock.__enter__()
+  File "/usr/lib/python3.5/multiprocessing/synchronize.py", line 96, in __enter__
+    return self._semlock.__enter__()
+KeyboardInterrupt
+  File "/usr/lib/python3.5/multiprocessing/process.py", line 249, in _bootstrap
+    self.run()
+  File "/usr/lib/python3.5/multiprocessing/process.py", line 93, in run
+    self._target(*self._args, **self._kwargs)
+  File "/usr/lib/python3.5/multiprocessing/synchronize.py", line 96, in __enter__
+    return self._semlock.__enter__()
+Traceback (most recent call last):
+  File "/usr/lib/python3.5/multiprocessing/synchronize.py", line 96, in __enter__
+    return self._semlock.__enter__()
+  File "/usr/lib/python3.5/multiprocessing/queues.py", line 93, in get
+    with self._rlock:
+  File "/usr/lib/python3.5/multiprocessing/queues.py", line 93, in get
+    with self._rlock:
+  File "/usr/lib/python3.5/multiprocessing/synchronize.py", line 96, in __enter__
+    return self._semlock.__enter__()
+  File "/usr/lib/python3.5/multiprocessing/queues.py", line 93, in get
+    with self._rlock:
+KeyboardInterrupt
+  File "/usr/lib/python3.5/multiprocessing/process.py", line 93, in run
+    self._target(*self._args, **self._kwargs)
+  File "/usr/lib/python3.5/multiprocessing/synchronize.py", line 96, in __enter__
+    return self._semlock.__enter__()
+KeyboardInterrupt
+  File "/gpfs/data/geraslab/Nan/public_repo/breast_data_loader/src/data/loading_cancer_heatmap.py", line 410, in loader_multiple_input_size
+    shared_array_index = q_empty_indices.get()
+KeyboardInterrupt
+  File "/usr/lib/python3.5/multiprocessing/synchronize.py", line 96, in __enter__
+    return self._semlock.__enter__()
+  File "/usr/lib/python3.5/multiprocessing/synchronize.py", line 96, in __enter__
+    return self._semlock.__enter__()
+  File "/gpfs/data/geraslab/Nan/public_repo/breast_data_loader/src/data/loading_cancer_heatmap.py", line 410, in loader_multiple_input_size
+    shared_array_index = q_empty_indices.get()
+KeyboardInterrupt
+  File "/usr/lib/python3.5/multiprocessing/queues.py", line 93, in get
+    with self._rlock:
+KeyboardInterrupt
+KeyboardInterrupt
+  File "/usr/lib/python3.5/multiprocessing/queues.py", line 93, in get
+    with self._rlock:
+  File "/usr/lib/python3.5/multiprocessing/synchronize.py", line 96, in __enter__
+    return self._semlock.__enter__()
+KeyboardInterrupt
+  File "/usr/lib/python3.5/multiprocessing/process.py", line 249, in _bootstrap
+    self.run()
+  File "/usr/lib/python3.5/multiprocessing/synchronize.py", line 96, in __enter__
+    return self._semlock.__enter__()
+KeyboardInterrupt
+  File "/usr/lib/python3.5/multiprocessing/process.py", line 93, in run
+    self._target(*self._args, **self._kwargs)
+KeyboardInterrupt
+  File "/gpfs/data/geraslab/Nan/public_repo/breast_data_loader/src/data/loading_cancer_heatmap.py", line 410, in loader_multiple_input_size
+    shared_array_index = q_empty_indices.get()
+KeyboardInterrupt
+  File "/usr/lib/python3.5/multiprocessing/queues.py", line 94, in get
+    res = self._recv_bytes()
+  File "/usr/lib/python3.5/multiprocessing/connection.py", line 216, in recv_bytes
+    buf = self._recv_bytes(maxlength)
+KeyboardInterrupt
+  File "/usr/lib/python3.5/multiprocessing/connection.py", line 407, in _recv_bytes
+    buf = self._recv(4)
+  File "/usr/lib/python3.5/multiprocessing/connection.py", line 379, in _recv
+    chunk = read(handle, remaining)
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "/usr/lib/python3.5/multiprocessing/process.py", line 249, in _bootstrap
+    self.run()
+  File "/usr/lib/python3.5/multiprocessing/process.py", line 93, in run
+    self._target(*self._args, **self._kwargs)
+  File "/gpfs/data/geraslab/Nan/public_repo/breast_data_loader/src/data/loading_cancer_heatmap.py", line 410, in loader_multiple_input_size
+    shared_array_index = q_empty_indices.get()
+  File "/usr/lib/python3.5/multiprocessing/queues.py", line 93, in get
+    with self._rlock:
+  File "/usr/lib/python3.5/multiprocessing/synchronize.py", line 96, in __enter__
+    return self._semlock.__enter__()
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "/usr/lib/python3.5/multiprocessing/process.py", line 249, in _bootstrap
+    self.run()
+  File "/usr/lib/python3.5/multiprocessing/process.py", line 93, in run
+    self._target(*self._args, **self._kwargs)
+  File "/gpfs/data/geraslab/Nan/public_repo/breast_data_loader/src/data/loading_cancer_heatmap.py", line 410, in loader_multiple_input_size
+    shared_array_index = q_empty_indices.get()
+  File "/usr/lib/python3.5/multiprocessing/queues.py", line 93, in get
+    with self._rlock:
+  File "/usr/lib/python3.5/multiprocessing/synchronize.py", line 96, in __enter__
+    return self._semlock.__enter__()
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "/usr/lib/python3.5/multiprocessing/process.py", line 249, in _bootstrap
+    self.run()
+  File "/usr/lib/python3.5/multiprocessing/process.py", line 93, in run
+    self._target(*self._args, **self._kwargs)
+  File "/gpfs/data/geraslab/Nan/public_repo/breast_data_loader/src/data/loading_cancer_heatmap.py", line 410, in loader_multiple_input_size
+    shared_array_index = q_empty_indices.get()
+  File "/usr/lib/python3.5/multiprocessing/queues.py", line 93, in get
+    with self._rlock:
+  File "/usr/lib/python3.5/multiprocessing/synchronize.py", line 96, in __enter__
+    return self._semlock.__enter__()
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "/usr/lib/python3.5/multiprocessing/process.py", line 249, in _bootstrap
+    self.run()
+  File "/usr/lib/python3.5/multiprocessing/process.py", line 93, in run
+    self._target(*self._args, **self._kwargs)
+  File "/gpfs/data/geraslab/Nan/public_repo/breast_data_loader/src/data/loading_cancer_heatmap.py", line 410, in loader_multiple_input_size
+    shared_array_index = q_empty_indices.get()
+  File "/usr/lib/python3.5/multiprocessing/queues.py", line 93, in get
+    with self._rlock:
+  File "/usr/lib/python3.5/multiprocessing/synchronize.py", line 96, in __enter__
+    return self._semlock.__enter__()
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "/usr/lib/python3.5/multiprocessing/process.py", line 249, in _bootstrap
+    self.run()
+  File "/usr/lib/python3.5/multiprocessing/process.py", line 93, in run
+    self._target(*self._args, **self._kwargs)
+  File "/gpfs/data/geraslab/Nan/public_repo/breast_data_loader/src/data/loading_cancer_heatmap.py", line 410, in loader_multiple_input_size
+    shared_array_index = q_empty_indices.get()
+  File "/usr/lib/python3.5/multiprocessing/queues.py", line 93, in get
+    with self._rlock:
+  File "/usr/lib/python3.5/multiprocessing/synchronize.py", line 96, in __enter__
+    return self._semlock.__enter__()
+KeyboardInterrupt
+Process Process-1:
+Traceback (most recent call last):
+  File "/usr/lib/python3.5/multiprocessing/process.py", line 249, in _bootstrap
+    self.run()
+  File "/usr/lib/python3.5/multiprocessing/process.py", line 93, in run
+    self._target(*self._args, **self._kwargs)
+  File "/gpfs/data/geraslab/Nan/public_repo/breast_data_loader/src/data/loading_cancer_heatmap.py", line 19, in loader_feeder_with_given_index
+    loading.loader_feeder_with_given_index(data_list, q_data_to_load, number_of_loaders, parameters, indices)
+  File "/gpfs/data/geraslab/Nan/public_repo/breast_data_loader/src/data/loading.py", line 28, in loader_feeder_with_given_index
+    q_data_to_load.put((index, metadata))
+  File "/usr/lib/python3.5/multiprocessing/queues.py", line 82, in put
+    if not self._sem.acquire(block, timeout):
+KeyboardInterrupt
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.5/multiprocessing/process.py", line 252, in _bootstrap
+    util._exit_function()
+  File "/usr/lib/python3.5/multiprocessing/util.py", line 314, in _exit_function
+    _run_finalizers()
+  File "/usr/lib/python3.5/multiprocessing/util.py", line 254, in _run_finalizers
+    finalizer()
+  File "/usr/lib/python3.5/multiprocessing/util.py", line 186, in __call__
+    res = self._callback(*self._args, **self._kwargs)
+  File "/usr/lib/python3.5/multiprocessing/queues.py", line 198, in _finalize_join
+    thread.join()
+  File "/usr/lib/python3.5/threading.py", line 1054, in join
+    self._wait_for_tstate_lock()
+  File "/usr/lib/python3.5/threading.py", line 1070, in _wait_for_tstate_lock
+    elif lock.acquire(block, timeout):
+KeyboardInterrupt
+2019-11-08 19:54:06,955 - __main__ - INFO - samples_per_training_epoch=9688; steps_per_epoch=2422
+2019-11-08 19:54:06,955 - __main__ - INFO - samples_per_evaluation_epoch=28462; validation_steps=7116
+2019-11-08 19:56:18,979 - __main__ - INFO - samples_per_training_epoch=9688; steps_per_epoch=2422
+2019-11-08 19:56:18,980 - __main__ - INFO - samples_per_evaluation_epoch=28462; validation_steps=7116
+2019-11-08 19:56:18,980 - src.training_loop - INFO - Removing /gpfs/data/geraslab/Nan/public_repo/breast_data_loader/results/testing/history.csv

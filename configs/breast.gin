@@ -1,5 +1,6 @@
 # Train configuration
 train.batch_size=4
+train.label_mode='multiclass_cancer_sides'
 
 # Training loop
 training_loop.n_epochs=5000
