@@ -6,6 +6,10 @@ import datetime as dt
 from . import reading_images
 from . import image_normalization
 from . import augmentations
+from breast_data_utils import deprecated
+
+import warnings
+import functools
 
 def loader_feeder(data_list, q_data_to_load, number_of_loaders, parameters, random_seed, permute=True):
 
@@ -309,7 +313,7 @@ def load_datum_multiple_input_size(metadata, reader_buffer, cc_loader_buffer, ml
 
     return datum
 
-#@deprecated
+@deprecated
 def loader(shared_array, q_data_to_load, q_data_loaded, q_empty_indices, parameters, random_seed, augmentation, randomise_view):
 
     random_number_generator = np.random.RandomState(random_seed)

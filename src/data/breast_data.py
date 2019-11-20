@@ -13,7 +13,7 @@ import sys
 import gin
 import cv2
 
-from src.utils import unpickle_from_file, get_random_seed
+from breast_data_utils import unpickle_from_file, get_random_seed
 from . import loading 
 from . import loading_cancer_heatmap
 from . import breast_data_utils

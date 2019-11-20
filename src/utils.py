@@ -69,26 +69,6 @@ class logger_breast_ori:
         self.log_file.write(self.text_to_log)
         self.log_file.close()
 
-def get_random_seed(random_seed):
-    if random_seed == -1:
-        return int(time.time() * 1000000) % (2 ** 30)
-    else:
-        return random_seed
-
-def deprecated(func):
-    """This is a decorator which can be used to mark functions
-    as deprecated. It will result in a warning being emitted
-    when the function is used."""
-    @functools.wraps(func)
-    def new_func(*args, **kwargs):
-        warnings.simplefilter('always', DeprecationWarning)  # turn off filter
-        warnings.warn("Call to deprecated function {}.".format(func.__name__),
-                      category=DeprecationWarning,
-                      stacklevel=2)
-        warnings.simplefilter('default', DeprecationWarning)  # reset filter
-        return func(*args, **kwargs)
-    return new_func
-
 def x_to_tensor(data_batch_x):
     tensor_list = [torch.Tensor(convert_img(data_batch_x[i])) for i in range(4)]
     cpu_x = dict(zip(["L-CC", "R-CC", "L-MLO", "R-MLO"], tensor_list))
@@ -119,13 +99,6 @@ def x_to_tensor_single(data_batch_x, view):
     tensor_list = torch.Tensor(convert_img(data_batch_x[0]))
     cpu_x = {view: tensor_list}
     return cpu_x
-
-def unpickle_from_file(file_name):
-    with open(file_name, 'rb') as handle:
-        try:
-            return pickle.load(handle)
-        except ImportError:
-            return pd.read_pickle(file_name)
 
 def class_count_breast(y_true, key):
     index_table = {'benign': 0, 'malignant': 1}
