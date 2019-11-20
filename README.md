@@ -9,6 +9,6 @@ Example: ``python bin/train.py save_to_folder configs/breast.gin``.
 
 ## TODO:
 
-1. Untested.
-2. Still importing functions outside this repository. 
-3. Currently only logging estimated time and further timer could be implemented.  
+1. Clear: ~~Untested~~.
+2. Clear: ~~Still importing functions outside this repository~~.
+3. Timer does not work at all.  
