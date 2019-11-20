@@ -11,4 +11,5 @@ Example: ``python bin/train.py save_to_folder configs/breast.gin``.
 
 1. Clear: ~~Untested~~.
 2. Clear: ~~Still importing functions outside this repository~~.
-3. Timer does not work at all.  
+3. Clear: ~~data loader part is independent with the framework~~.
+4. Timer does not work at all.  
